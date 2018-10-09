@@ -11,6 +11,21 @@
 |
 */
 
+use App\photo;
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post('/photo', function (Request $request) {
+    $validator = Validator::make($request->all(), [
+        'event_id' => 'required|max:255',
+    ]);
+
+    if($validator->fails()){
+        return redirect('/')
+            ->withInput()
+            ->withErrors($validator);
+    }
 });
