@@ -18,14 +18,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/photo', function (Request $request) {
-    $validator = Validator::make($request->all(), [
-        'event_id' => 'required|max:255',
-    ]);
+Route::get('/login', function () {
+    return view('login');
+});
 
-    if($validator->fails()){
-        return redirect('/')
-            ->withInput()
-            ->withErrors($validator);
-    }
+Route::get('/photo', function () {
+    return view('photo');
+});
+
+Route::get('/regi', function () {
+    return view('regi');
+});
+
+Route::match(['get', 'post'],'sigin', 'MembersController@sigin');
+
+Route::match(['get', 'post'],'regin', 'MembersRegistration@regin');
+
+
+Route::post('/login', function () {
+   return view('login');
+	
+
 });

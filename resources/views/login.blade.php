@@ -65,7 +65,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+			
+           <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -78,14 +79,27 @@
                     @endauth
                 </div>
             @endif
-
+			-->
+			
             <div class="content">
-                <div class="title m-b-md">yea_cheese!!</div>
+                <div class="title m-b-md">login!!</div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">写真を見る</a>
-                    <a href="https://laracasts.com">会員登録</a>
-                    <a href="https://laravel-news.com">ログイン</a>
+                <div class="links">  
+					
+					<!-- <p align="right">mail<input type="text" name="mail" id="mail" class="form-control"></p>
+				    <p align="right">pass<input type="password" name="password" id="password" class="form-control"></p>
+					 <button type="submit" class="btn btn-default">
+				<i class="fa fa-btn fa-plus"></i>login
+			    </button>
+					-->
+					
+					<form action="/sigin" method="post">
+    					<div>mail<input type="text" name="user_name"></div>
+    					<div>pass<input type="password" name="user_password"></div>
+    					<div><input type="hidden" name="_token" value="{{csrf_token()}}"></div>
+    					<div><input type="submit" value="送信"></div>
+					</form>
+					
                 </div>
             </div>
         </div>

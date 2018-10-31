@@ -80,12 +80,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">yea_cheese!!</div>
+                <div class="title m-b-md">Photo!!</div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">写真を見る</a>
-                    <a href="https://laracasts.com">会員登録</a>
-                    <a href="https://laravel-news.com">ログイン</a>
+                    <!-- <a href="https://laravel.com/docs">写真を見る</a> -->
+                    <a href="/">戻る</a>
+                    <a href="login">ログイン</a>
                 </div>
             </div>
         </div>

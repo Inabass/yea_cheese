@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> welcome to yea_cheese</title>
+        <title> yea_cheese login</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -65,7 +65,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <!-- @if (Route::has('login'))
+			
+           <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -77,15 +78,15 @@
                         @endif
                     @endauth
                 </div>
-            @endif -->
-
+            @endif
+			-->
+			
             <div class="content">
-                <div class="title m-b-md">yea_cheese!!</div>
+                <div class="title m-b-md">Members Page!!</div>
 
-                <div class="links">
-                    <a href="photo">写真を見る</a>
-                    <a href="regi">会員登録</a>
-                    <a href="login">ログイン</a>
+                <div class="links">  
+					
+					
                 </div>
             </div>
         </div>
