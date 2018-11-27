@@ -85,7 +85,7 @@
                 <div class="title m-b-md">registration!!</div>
 				<?php
 					//echo "".$_POST["data"] ."";
-				?>
+				?>このメールアドレスは使われています。
                 <div class="links">  
 					
 			    <form action="/regin" method="post">

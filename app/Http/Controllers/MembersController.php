@@ -16,18 +16,29 @@ class MembersController extends Controller
      */
     public function sigin(Request $request)
     {
+		//メールアドレスを取得
         $mail = $request->input('user_name');
+		
+		//パスワードを取得
         $pass = $request->input('user_password');
 		
-		$has = hash('sha256', $pass);
+		//取得したパスワードをハッシュ化
+		$passh = hash('sha256', $pass);
 		
-		$hass = hash('sha256', '123');
+		//
+		$user = DB::table('userdb')->where('mailad', $mail)->first();
 		
-
-		if($mail == 321 && $has == $hass)
+		if(is_null($user)){
+				return view('e4');
+		}
+		
+		$has = $user->password;
+		
+		//パスワード照合
+		if($passh == $has)
         	return view('sigin');
-		else
-			return view('login');
+		
+		return view('e4');
     }
 
 }

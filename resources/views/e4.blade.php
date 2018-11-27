@@ -82,16 +82,20 @@
 			-->
 			
             <div class="content">
-                <div class="title m-b-md">registration!!</div>
-				<?php
-					//echo "".$_POST["data"] ."";
-				?>
+                <div class="title m-b-md">login!!</div>
+
                 <div class="links">  
 					
-			    <form action="/regin" method="post">
+					<!-- <p align="right">mail<input type="text" name="mail" id="mail" class="form-control"></p>
+				    <p align="right">pass<input type="password" name="password" id="password" class="form-control"></p>
+					 <button type="submit" class="btn btn-default">
+				<i class="fa fa-btn fa-plus"></i>login
+			    </button>
+					-->
+					メールアドレス、又はパスワードに誤りがあります。
+					<form action="/sigin" method="post">
     					<div>mail<input type="text" name="user_name"></div>
-    					<div>pass<input type="password" name="user_password1"></div>
-						<div>re pass<input type="password" name="user_password2"></div>
+    					<div>pass<input type="password" name="user_password"></div>
     					<div><input type="hidden" name="_token" value="{{csrf_token()}}"></div>
     					<div><input type="submit" value="送信"></div>
 					</form>

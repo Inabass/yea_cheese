@@ -30,6 +30,7 @@ Route::get('/regi', function () {
     return view('regi');
 });
 
+
 Route::match(['get', 'post'],'sigin', 'MembersController@sigin');
 
 Route::match(['get', 'post'],'regin', 'MembersRegistration@regin');
@@ -37,6 +38,4 @@ Route::match(['get', 'post'],'regin', 'MembersRegistration@regin');
 
 Route::post('/login', function () {
    return view('login');
-	
-
 });
