@@ -39,3 +39,7 @@ Route::match(['get', 'post'],'regin', 'MembersRegistration@regin');
 Route::post('/login', function () {
    return view('login');
 });
+
+Route::get('/photoup', function () {
+    return view('photoup');
+});

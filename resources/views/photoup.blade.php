@@ -82,12 +82,12 @@
 			-->
 			
             <div class="content">
-                <div class="title m-b-md">Members Page!!</div>
+                <div class="title m-b-md">Photo up!!</div>
 
                 <div class="links">  
-					<a href="photoup">写真をアップする</a>
-                    <a href="event">イベント管理</a>
-                    <a href="">ログアウト</a>
+					<a href="photoup">写真を選択</a>
+                    <a href="event">アップロード</a>
+                    <a href="sigin">メンバーページに戻る</a>
 					
                 </div>
             </div>
